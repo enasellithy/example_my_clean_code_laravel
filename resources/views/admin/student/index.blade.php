@@ -90,7 +90,7 @@
                                     {{ $i->email }}
                                 </td>
                                 <td>
-                                    {{ $i->schools->name }}
+                                    {{ $i->schools->name ?? '' }}
                                 </td>
                                 <td>
                                     <!--Edit-->

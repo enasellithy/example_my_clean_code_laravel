@@ -14,8 +14,8 @@ class Foriginkey extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('school_id')->nullable()->constrained('schools');
-            $table->foreignId('user_role_id')->default(2)->constrained('user_roles');
+            $table->foreignId('school_id')->nullable();
+            $table->foreignId('user_role_id')->nullable();
         });
     }
 

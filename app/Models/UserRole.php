@@ -11,6 +11,8 @@ class UserRole extends Model
 
     protected $table = 'user_roles';
 
+    public $timestamps = false;
+
     protected $fillable = [
         'name',
     ];
